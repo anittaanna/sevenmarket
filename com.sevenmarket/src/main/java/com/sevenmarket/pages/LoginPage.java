@@ -83,11 +83,12 @@ WebElement errormessage;
 		//	clickOnSigninButton();
 	//	}
 	
-	public void verifyValidLogin()
+	public HomePage verifyValidLogin()
 	{
 		enterUsername(properties.getProperty("username"));
 		enterPassword(properties.getProperty("password"));
 		clickOnSigninButton();
+		return new HomePage(driver);
 	}
 	
 	public  boolean ErrormessageOnInvalidLogin(String username, String password)

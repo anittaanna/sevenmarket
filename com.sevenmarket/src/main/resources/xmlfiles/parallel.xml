@@ -34,6 +34,17 @@
 		</classes>
 
 	</test>
+	
+	<test name="ManageNewsTestCase">
+		<classes>
+			<class name="com.sevenmarket.tests.ManageNewsTest">
+
+			</class>
+
+		</classes>
+
+	</test>
+	
 
 
 </suite>

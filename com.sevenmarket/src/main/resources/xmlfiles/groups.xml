@@ -19,7 +19,8 @@
 			</class>
 			<class name="com.sevenmarket.tests.HomeTest">
 			</class>
-			
+			<class name="com.sevenmarket.tests.ManageNewsTest">
+			</class>
 			
 		</classes>
 

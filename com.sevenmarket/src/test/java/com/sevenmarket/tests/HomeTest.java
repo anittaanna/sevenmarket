@@ -24,7 +24,16 @@ public class HomeTest extends Base {
 		
 	}
 	
+	@Test
+	public void verifyManageNewsInfoClick()
+	{
+		loginpage=new LoginPage(driver);
+		homepage=new HomePage(driver);
+		loginpage.verifyValidLogin();
+		homepage.adminMoreInfoClick();
+	}
 	
+
 	
 	
 	

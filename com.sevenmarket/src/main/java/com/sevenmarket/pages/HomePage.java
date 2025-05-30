@@ -14,6 +14,9 @@ public class HomePage {
 	@FindBy(xpath="//p[text()='Admin Users']/following::a[1]")
 	WebElement adminusers;
 	
+	@FindBy(xpath="(//p[text()='Manage News'])[2]/following::a[1]")
+	WebElement managenews;
+	
 	
 	public HomePage(WebDriver driver)
 	{
@@ -28,18 +31,22 @@ public class HomePage {
 	}
 	
 	
-	public void adminMoreInfoClick()
+	public AdminUsersPage adminMoreInfoClick()
 	{
 		adminusers.click();
+		return new AdminUsersPage(driver);
+	}
+	
+	
+	public void manageNewsInfoClick()
+	{
+		managenews.click();;
 	}
 	
 	
 	
 	
 	
-	
-	
-	// //p[text()='Admin Users']/following::a
 	
 
 }

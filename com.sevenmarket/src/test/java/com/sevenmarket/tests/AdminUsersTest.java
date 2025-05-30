@@ -34,7 +34,18 @@ public class AdminUsersTest extends Base{
 	}
 	
 	
+	@Test
 	
+	public void alertDisplayedOnAddingInfo() throws InterruptedException
+	{
+		loginpage=new LoginPage(driver);
+		homepage=loginpage.verifyValidLogin();
+		adminuserspage=homepage.adminMoreInfoClick();
+		adminuserspage.clickNewButton().enterUsernameAndPassword("apple", "admins").selectDropDown("Partner").clickSave();
+		Thread.sleep(6000);
+		adminuserspage.alertIsDisplayed();
+		Assert.assertTrue(adminuserspage.alertIsDisplayed());
+	}
 	
 	
 	
